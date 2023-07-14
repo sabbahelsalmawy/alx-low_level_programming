@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
- * main: is start of program
- * printf: to print output
- * retuar: alwaes is (0)
+ * main - Entry point
+ * descrabtion:sizeof fun that output of the size of var
+ * Return: alwaes is (0) suc
  */
 int main(void)
 {
