@@ -13,7 +13,7 @@
 */
 int main(void)
 {
-	int a;
+	char a;
 
 	a = 97;
 	putchar(a);
