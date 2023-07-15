@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main:is the fun to start code entry point
+ * main - is the function to start code entry point
  *
  *
  * n:is the variablr that store number randam in every time
