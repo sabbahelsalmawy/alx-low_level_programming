@@ -15,18 +15,18 @@ int main(void)
 {
 	char c = 'a';
 	char x = 'A';
-	
+
 	while (c <= 'z')
-        {
+	{
 		putchar(c);
 		c++;
-        }
-	 while (x <= 'Z')
-        {
+	}
+	while (x <= 'Z')
+	{
 		putchar(x);
 		x++;
-        }
+	}
 	putchar('\n');
-	
+
 	return (0);
 }
