@@ -17,6 +17,7 @@ int main(void)
 
 	a = 97;
 	putchar(a);
+	a++;
 
 	return (0);
 }
