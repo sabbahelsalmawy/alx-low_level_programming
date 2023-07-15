@@ -15,8 +15,8 @@ int main(void)
 {
 	char a;
 
-	a = 97;
-	putchar(a);
+	a = 0;
+	putchar(a + 97);
 	a++;
 
 	return (0);
