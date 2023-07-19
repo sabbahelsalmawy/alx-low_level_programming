@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *
- * print_alphabet - prints the alphabe, in lowercase, followed by a new line
+ * function print_alphabet: - prints the alphabe in lowercase
  */
+
 void print_alphabet(void)
 {
 	char al;
