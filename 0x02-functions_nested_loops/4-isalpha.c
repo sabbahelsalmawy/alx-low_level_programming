@@ -16,4 +16,5 @@ int _isalpha(int c)
 		return (1);
 	while (c >= 97 && c <= 122)
 		return (1);
+	return (0);
 }
