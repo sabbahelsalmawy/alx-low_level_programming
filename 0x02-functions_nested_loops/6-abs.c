@@ -8,9 +8,7 @@
 int _abs(int r)
 {
 	while (r > 0)
-	{
 		return (r);
-		if (r < 0)
-			return (r * (-1));
-	}
+	if (r < 0)
+		return (r * (-1));
 }
