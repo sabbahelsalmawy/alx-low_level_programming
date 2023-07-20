@@ -9,8 +9,8 @@ int _abs(int r)
 {
 	while (r > 0)
 	{
-		printf(r);
+		return (r);
 		if (r < 0)
-			printf(r * (-1))
+			return (r * (-1))
 	}
 }
