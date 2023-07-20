@@ -12,10 +12,6 @@
 */
 int _isalpha(int c)
 {
-	int c;
-
-	isalpha = 0;
-
 	while (c >= 65 && c <= 90)
 	{
 		return (1);
