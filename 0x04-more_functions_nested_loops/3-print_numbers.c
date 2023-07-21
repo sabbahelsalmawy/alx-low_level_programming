@@ -9,7 +9,8 @@ void print_numbers(void)
 {
 	int a;
 
-	if (a <= '9' && a >= '0')
+	a = 0 ;
+	if (a <= '9')
 	{
 		_putchar(a);
 	}
