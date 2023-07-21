@@ -12,6 +12,7 @@ void print_numbers(void)
 	{
 		_putchar(a);
 		a++;
+		return (a);
 	}
 	_putchar('\n');
 }
