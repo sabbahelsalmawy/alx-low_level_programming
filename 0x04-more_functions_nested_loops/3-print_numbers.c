@@ -13,6 +13,7 @@ void print_numbers(void)
 	if (a <= '9')
 	{
 		_putchar(a);
+		a++;
 	}
 	_putchar('\n');
 }
