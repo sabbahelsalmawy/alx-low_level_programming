@@ -11,7 +11,7 @@ void print_numbers(void)
 
 	if (a <= '9' && a >= '0')
 	{
-		_putchar('%d');
+		_putchar(a);
 	}
 	_putchar('\n');
 }
