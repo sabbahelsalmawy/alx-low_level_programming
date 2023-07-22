@@ -1,34 +1,34 @@
 #include <stdio.h>
 
 /**
-* main - prints even numbers from 0 to 100
-* Return: 0
-*/
-
+ * main - prints Buzz each numbers of 3 and 5.
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int a;
+	int n;
 
-	printf("%d", a);
-	for (a = 1; a < 101; a++)
+	n = 1;
+	printf("%d", n);
+	for (n = 2; n <= 100; n++)
 	{
-		if ((a % 3 == 0) && (a % 5 == 0))
-		{
-			printf(" Fizz");
-		}
-		else if (a % 5 == 0)
-		{
-			printf(" Buzz");
-		}
-		else if (a % 3 == 0)
+		if ((n % 3 == 0) && (n % 5 == 0))
 		{
 			printf(" FizzBuzz");
 		}
+		else if (n % 3 == 0)
+		{
+			printf(" Fizz");
+		}
+		else if (n % 5 == 0)
+		{
+			printf(" Buzz");
+		}
 		else
 		{
-			printf(" %d", a);
+			printf(" %d", n);
 		}
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
