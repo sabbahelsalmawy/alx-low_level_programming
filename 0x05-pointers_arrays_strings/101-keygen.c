@@ -1,20 +1,25 @@
-#include <stdio.h> 
-#include <stdlib.h> 
-#include <time.h> 
-     
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+/**
+ * main - generates keygen.
+ * Return: 0 Always.
+*/
+
 int main(int argc, char* argv[]) 
 {
-	int cnt=0;
-	char str[256], *p=str;
-	srand(time(0));
-	do
-	{ 
-		*p = rand()%26+'a';
-		cnt += *p++;
+	int a;
+	char c;
+
+	srand(time(NULL));
+
+	while(a <= 2645)
+	{
+		c = rand() % 128;
+		a += c;
+		putchar(c);
 	}
-	while((0xad4-cnt)>'z');
-	*p++ = 0xad4-cnt;
-	*p = 0;
-	printf(str);
-	return 0; 
+	printf(2772 - a);
+	return (0); 
 } 
