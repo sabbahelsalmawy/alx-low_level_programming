@@ -13,8 +13,8 @@ char *_strncpy(char *dest, char *src, int n)
 
 	b = 0;
 	while (dest[b] != '\0')
-		a++;
+		b++;
 	for (; src[b] != '\0' && b < n; b++)
-		*dest[b] = *src[b];
+		dest[b] = src[b];
 	return (dest);
 }
