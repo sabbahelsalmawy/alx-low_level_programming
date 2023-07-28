@@ -13,22 +13,22 @@ char *cap_string(char *str)
 	a = 0;
 	for (; str[a] > 'a' && str[a] < 'z'; a++)
 	{
-		if (str[index - 1] == ' ' ||
-		    str[index - 1] == '\t' ||
-		    str[index - 1] == '\n' ||
-		    str[index - 1] == ',' ||
-		    str[index - 1] == ';' ||
-		    str[index - 1] == '.' ||
-		    str[index - 1] == '!' ||
-		    str[index - 1] == '?' ||
-		    str[index - 1] == '"' ||
-		    str[index - 1] == '(' ||
-		    str[index - 1] == ')' ||
-		    str[index - 1] == '{' ||
-		    str[index - 1] == '}' ||
-		    index == 0)
-			str[index] -= 32;
-		index++;
+		if (str[a - 1] == ' ' ||
+		    str[a - 1] == '\t' ||
+		    str[a - 1] == '\n' ||
+		    str[a - 1] == ',' ||
+		    str[a - 1] == ';' ||
+		    str[a - 1] == '.' ||
+		    str[a - 1] == '!' ||
+		    str[a - 1] == '?' ||
+		    str[a - 1] == '"' ||
+		    str[a - 1] == '(' ||
+		    str[a - 1] == ')' ||
+		    str[a - 1] == '{' ||
+		    str[a - 1] == '}' ||
+		    a == 0)
+			str[a] -= 32;
+		a++;
 	}
 	return (str);
 }
