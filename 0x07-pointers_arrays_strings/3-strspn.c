@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (; s[e] != '\0'; e++)
 	{
-		for (; accept[a] != '\0'; a++)
+		for (; accept[a] != s[e]; a++)
 			if (s[e] == accept[a])
 			return (e);
 	}
