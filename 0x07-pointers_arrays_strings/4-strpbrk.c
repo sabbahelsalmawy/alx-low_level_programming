@@ -12,30 +12,12 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int x, z;
 
-	x = 0;
-	z = 0;
-
-	for (; s[x] != '\0'; x++)
+	for (x = 0; *(s + x) != '\0'; x++)
 	{
-		for (; accept[z] != '\0'; z++)
+		for (z = 0; *(accept + z) != '\0'; z++)
 		{
-			if (accept[z] == s[x])
-			{
-				s += x;
-				return (s);
-			}
-		}
-	}
-	return ('\0');
-}
-unsigned int i, j;
-
-	for (i = 0; *(s + i) != '\0'; i++)
-	{
-		for (j = 0; *(accept + j) != '\0'; j++)
-		{
-			if (*(s + i) == *(accept + j))
-				return (s + i);
+			if (*(s + x) == *(accept + z))
+				return (s + x);
 		}
 	}
 	return ('\0');
