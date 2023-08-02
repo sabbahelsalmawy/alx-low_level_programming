@@ -17,11 +17,11 @@ char *_strpbrk(char *s, char *accept)
 
 	for (; s[x] != '\0'; x++)
 	{
-		for (; accept[z] != s[x]; z++)
+		for (; accept[z] != '\0'; z++)
 		{
-			if (accept[z] = s[x])
-				return (x);
+			if (accept[z] == s[x])
+				return (s + x);
 		}
 	}
-	return (x);
+	return ('\0');
 }
