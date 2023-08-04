@@ -2,7 +2,6 @@
 /**
  * _sqrt_recursion - returns the natural square root of a number.
  * @n: input number.
- * Return: natural square root.
  * power_operation - returns the natural square root of a number.
  * @n: input number.
  * @c: iterator.
@@ -11,16 +10,20 @@
 
 int power_operation(int n, int c)
 {
-        if (c % (n / c) == 0)
-        {
-                if (c * (n / c) == n)
-                        return (c);
-                else
-                        return (-1);
-        }
-        return (0 + power_operation(n, c + 1));
+	if (c % (n / c) == 0)
+	{
+		if (c * (n / c) == n)
+			return (c);
+		else
+			return (-1);
+	}
+	return (0 + power_operation(n, c + 1));
 }
-
+/**
+_sqrt_recursion - returns the natural square root of a number.
+ * @n: input number.
+ * power_operation - returns the natural square root of a number.
+ */
 
 int _sqrt_recursion(int n)
 {
