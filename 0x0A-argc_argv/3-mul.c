@@ -11,7 +11,7 @@
 
 int main(int argc, char **argv)
 {
-	int x, y;
+	int x = 0, y = 0;
 
 	if (argc == 3)
 	{
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		printf("\nError");
+		printf("Error\n");
 		return (1);
 	}
 	return (0);
