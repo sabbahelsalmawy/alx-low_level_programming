@@ -14,6 +14,7 @@ int main(int argc, char **argv)
 	{
 		int x, y = 0, z = atoi(argv[1]);
 		int a = [25,10,5,2,1];
+
 		for (x = 0; x < 5; x++)
 		{
 			if (z >= a[x])
