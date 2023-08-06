@@ -10,10 +10,10 @@
   */
 int main(int argc, char *argv[])
 {
-	int sum;
+	int sum = 0;
 	char *e;
 
-	if (argc > 1)
+	while (--argc)
 	{
 		for (e = argv[argc]; *e; e++)
 			if (*e < '0' || *e > '9')
@@ -21,13 +21,8 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-		sum += atoi(e);
-		e++;
-		printf("%d\n", sum);
+		sum += atoi(argc[argv]);
 	}
-			else
-			{
-				printf("0\n");
-			}
+		printf("%d\n", sum);
 		return (0);
 }
