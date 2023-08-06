@@ -1,25 +1,27 @@
 #include<stdio.h>
 #include<srdlib.h>
-
 /**
-  * main - Prints the sum of args positive numbers
-  * @argc: argument count
-  * @argv: argument vector
-  *
-  * Return: Always zero
-  */
+ * main - adds positive numbers.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
+ */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	char *e;
+	int i, j, add = 0;
 
-	while (--argc)
+	for (i = 1; i < argc; i++)
 	{
-		for (e = argv[argc]; *e; e++)
-			if (*e < '0' || *e > '9')
-				return (printf("Error\n"), 1);
-		sum += atoi(argc[argv]);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		add += atoi(argv[i]);
 	}
-	printf("%d\n", sum);
+	printf("%d\n", add);
 	return (0);
 }
