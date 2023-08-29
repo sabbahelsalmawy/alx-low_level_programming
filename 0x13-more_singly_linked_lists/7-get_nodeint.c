@@ -3,7 +3,7 @@
 /**
  * get_nodeint_at_index - returns the nth node of a linked list
  * @index: index of the node.
- *
+ * @head: it is a node nth of task
  * Return: nth node. If node does not exist, returns NULL.
  */
 
